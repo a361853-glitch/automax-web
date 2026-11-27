@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Automax</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="/" class="brand-link" aria-label="Inicio Automax">
+        <img src="/img/logo.svg" alt="Logotipo de Automax" height="36">
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/acerca">Acerca de nosotros</a></li>
+          <li><a href="/contacto" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="section-header">
+        <h1>Contacto</h1>
+        <p>Visítanos en nuestra sucursal o envíanos tu solicitud de información.</p>
+      </header>
+
+      <div class="contact-layout">
+        <section class="card" aria-labelledby="info-sucursal">
+          <h3 id="info-sucursal">Información de la empresa</h3>
+          <ul class="contact-list">
+            <li>
+              <strong>Dirección:</strong><br>
+              Av. Universidad #2450, Col. San Felipe, C.P. 31203, Chihuahua, Chih., México.
+            </li>
+            <li>
+              <strong>Teléfono:</strong><br>
+              +52 (614) 412-8890
+            </li>
+            <li>
+              <strong>Correo electrónico:</strong><br>
+              contacto@automax.com.mx
+            </li>
+            <li>
+              <strong>Horarios de atención:</strong><br>
+              Lunes a Viernes: 8:00 AM – 7:00 PM<br>
+              Sábados: 9:00 AM – 3:00 PM<br>
+              Domingos: Cerrado
+            </li>
+            <li>
+              <strong>Referencias de ubicación:</strong><br>
+              A dos cuadras del Campus I de la UACH. Contamos con estacionamiento gratuito para clientes.
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="titulo-form">
+          <h3 id="titulo-form">Envíanos un mensaje</h3>
+          <form id="contact-form" action="/api/contacto" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej. Laura Hernández">
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required placeholder="614-123-4567">
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Indícanos qué vehículo te interesa y las fechas de renta..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+            <div id="form-feedback" class="alert" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Automax Renta de Automóviles. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/js/contacto.js"></script>
+</body>
+</html>
