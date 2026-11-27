@@ -1,0 +1,11 @@
+{
+  "name": "automax-web",
+  "version": "1.0.0",
+  "description": "Sitio web y servidor HTTP nativo para renta de vehículos Automax",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "author": "Equipo Automax",
+  "license": "ISC"
+}
