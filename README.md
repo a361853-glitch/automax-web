@@ -41,7 +41,7 @@ El backend está organizado por responsabilidades en módulos separados:
 ### Pasos de ejecución
 1. **Clonar el repositorio público:**
    ```bash
-   git clone https://github.com/markliaris/automax-web.git
+   git clone https://github.com/a361853-glitch/automax-web.git
    cd automax-web
    ```
 
