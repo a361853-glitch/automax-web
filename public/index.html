@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automax | Renta de Automóviles</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="/" class="brand-link" aria-label="Inicio Automax">
+        <img src="/img/logo.svg" alt="Logotipo de Automax" height="36">
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="/" class="active">Inicio</a></li>
+          <li><a href="/acerca">Acerca de nosotros</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Tu próximo viaje comienza con el vehículo ideal</h1>
+        <p>
+          En <strong>Automax</strong> ofrecemos una flotilla moderna de 25 vehículos verificados,
+          tarifas transparentes por día y atención personalizada para viajes de negocio o placer.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn btn-primary">Explorar catálogo</a>
+          <a href="/contacto" class="btn btn-outline">Solicitar cotización</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Catálogo de Vehículos (25 unidades disponibles)</h2>
+          <p>
+            Consulta marca, modelo, año y tarifa diaria. Los primeros tres modelos cuentan con ficha
+            técnica detallada e imagen.
+          </p>
+        </header>
+
+        <div class="catalog-controls">
+          <input
+            type="search"
+            id="buscador"
+            placeholder="Buscar por marca o modelo (ej. Toyota, Civic, SUV)..."
+            aria-label="Buscar vehículos"
+          >
+          <select id="filtro-categoria" aria-label="Filtrar por categoría">
+            <option value="Todas">Todas las categorías</option>
+            <option value="Sedán">Sedán</option>
+            <option value="SUV">SUV</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Pickup">Pickup</option>
+          </select>
+        </div>
+
+        <div id="catalogo-grid" class="catalog-grid" aria-live="polite">
+          <!-- Renderizado dinámico por /js/catalogo.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Automax Renta de Automóviles. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/js/catalogo.js"></script>
+</body>
+</html>
